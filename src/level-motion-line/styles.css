@@ -1,0 +1,405 @@
+body {
+	padding: 0.25rem;
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #ccc;
+}
+
+.text--center {
+  text-align: center;
+}
+
+hr{
+	display: block;
+	margin: 0 auto;
+	height: 15px;
+	width: 105px;
+	border: none;
+	border-radius: 3px;
+	border-left: 15px solid #00f000;
+	border-right: 15px solid #003000;
+	animation: red--animation--line 1s infinite ease-in-out alternate;
+}
+
+hr:before{
+	content: " ";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-left: 15px solid #00c000;
+	border-right: 15px solid #006000;
+	animation: red--animation--line--before 1s infinite ease-in-out alternate;
+}
+
+hr:after{
+	content: " ";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-left: 15px solid #003000;
+	background-color: #003000;
+	border-right: 15px solid #003000;
+	animation: red--animation--line--after 1s infinite ease-in-out alternate;
+}
+
+hr:nth-of-type(2)
+{
+	animation: yellow--animation--line 1s infinite ease-in-out alternate;
+}
+
+hr:nth-of-type(2):after
+{
+	animation: yellow--animation--line--after 1s infinite ease-in-out alternate;
+}
+
+hr:nth-of-type(2):before
+{
+	animation: yellow--animation--line--before 1s infinite ease-in-out alternate;
+}
+
+@keyframes red--animation--line {
+	0% {
+		background-color: #003000;
+		border-left: 15px solid #00f000;
+		border-right: 15px solid #003000;
+	}
+	10% {
+		background-color: #003000;
+		border-left: 15px solid #00f000;
+		border-right: 15px solid #003000;
+	}
+	20% {
+		background-color: #003000;
+		border-left: 15px solid #00c000;
+		border-right: 15px solid #003000;
+	}
+	30% {
+		background-color: #003000;
+		border-left: 15px solid #00a000;
+		border-right: 15px solid #003000;
+	}
+	40% {
+		background-color: #003000;
+		border-left: 15px solid #006000;
+		border-right: 15px solid #003000;
+	}
+	50% {
+		background-color: #006000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #003000;
+	}
+	60% {
+		background-color: #00a000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #006000;
+	}
+	70% {
+		background-color: #00c000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #00a000;
+	}
+	80% {
+		background-color: #00f000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #00c000;
+	}
+	90% {
+		background-color: #00c000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #00f000;
+	}
+	100% {
+		background-color: #00c000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #00f000;
+	}
+}
+
+@keyframes red--animation--line--before {
+	0% {
+		background-color: #00a000;
+		border-left: 15px solid #00c000;
+		border-right: 15px solid #006000;
+	}
+	10% {
+		background-color: #00a000;
+		border-left: 15px solid #00c000;
+		border-right: 15px solid #006000;
+	}
+	20% {
+		background-color: #00c000;
+		border-left: 15px solid #00f000;
+		border-right: 15px solid #00a000;
+	}
+	30% {
+		background-color: #00f000;
+		border-left: 15px solid #00c000;
+		border-right: 15px solid #00c000;
+	}
+	40% {
+		background-color: #00c000;
+		border-left: 15px solid #00a000;
+		border-right: 15px solid #00f000;
+	}
+	50% {
+		background-color: #00a000;
+		border-left: 15px solid #006000;
+		border-right: 15px solid #00c000;
+	}
+	60% {
+		background-color: #006000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #00a000;
+	}
+	70% {
+		background-color: #003000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #006000;
+	}
+	80% {
+		background-color: #003000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #003000;
+	}
+	90% {
+		background-color: #003000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #003000;
+	}
+	100% {
+		background-color: #003000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #003000;
+	}
+}
+
+@keyframes red--animation--line--after {
+	0% {
+		background-color: #003000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #003000;
+	}
+	10% {
+		background-color: #003000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #003000;
+	}
+	20% {
+		background-color: #003000;
+		border-left: 15px solid #006000;
+		border-right: 15px solid #003000;
+	}
+	30% {
+		background-color: #006000;
+		border-left: 15px solid #00a000;
+		border-right: 15px solid #003000;
+	}
+	40% {
+		background-color: #00a000;
+		border-left: 15px solid #00c000;
+		border-right: 15px solid #006000;
+	}
+	50% {
+		background-color: #00c000;
+		border-left: 15px solid #00f000;
+		border-right: 15px solid #00a000;
+	}
+	60% {
+		background-color: #00f000;
+		border-left: 15px solid #00c000;
+		border-right: 15px solid #00c000;
+	}
+	70% {
+		background-color: #00c000;
+		border-left: 15px solid #00a000;
+		border-right: 15px solid #00f000;
+	}
+	80% {
+		background-color: #00a000;
+		border-left: 15px solid #006000;
+		border-right: 15px solid #00c000;
+	}
+	90% {
+		background-color: #006000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #00a000;
+	}
+	100% {
+		background-color: #006000;
+		border-left: 15px solid #003000;
+		border-right: 15px solid #00a000;
+	}
+}
+@keyframes yellow--animation--line {
+	0% {
+		background-color: #333300;
+		border-left: 15px solid #ffff00;
+		border-right: 15px solid #333300;
+	}
+	10% {
+		background-color: #333300;
+		border-left: 15px solid #ffff00;
+		border-right: 15px solid #333300;
+	}
+	20% {
+		background-color: #333300;
+		border-left: 15px solid #cccc00;
+		border-right: 15px solid #333300;
+	}
+	30% {
+		background-color: #333300;
+		border-left: 15px solid #808000;
+		border-right: 15px solid #333300;
+	}
+	40% {
+		background-color: #333300;
+		border-left: 15px solid #4c4c00;
+		border-right: 15px solid #333300;
+	}
+	50% {
+		background-color: #4c4c00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #333300;
+	}
+	60% {
+		background-color: #808000;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #4c4c00;
+	}
+	70% {
+		background-color: #cccc00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #808000;
+	}
+	80% {
+		background-color: #ffff00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #cccc00;
+	}
+	90% {
+		background-color: #cccc00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #ffff00;
+	}
+	100% {
+		background-color: #cccc00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #ffff00;
+	}
+}
+
+@keyframes yellow--animation--line--before {
+	0% {
+		background-color: #808000;
+		border-left: 15px solid #cccc00;
+		border-right: 15px solid #4c4c00;
+	}
+	10% {
+		background-color: #808000;
+		border-left: 15px solid #cccc00;
+		border-right: 15px solid #4c4c00;
+	}
+	20% {
+		background-color: #cccc00;
+		border-left: 15px solid #ffff00;
+		border-right: 15px solid #808000;
+	}
+	30% {
+		background-color: #ffff00;
+		border-left: 15px solid #cccc00;
+		border-right: 15px solid #cccc00;
+	}
+	40% {
+		background-color: #cccc00;
+		border-left: 15px solid #808000;
+		border-right: 15px solid #ffff00;
+	}
+	50% {
+		background-color: #808000;
+		border-left: 15px solid #4c4c00;
+		border-right: 15px solid #cccc00;
+	}
+	60% {
+		background-color: #4c4c00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #808000;
+	}
+	70% {
+		background-color: #333300;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #4c4c00;
+	}
+	80% {
+		background-color: #333300;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #333300;
+	}
+	90% {
+		background-color: #333300;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #333300;
+	}
+	100% {
+		background-color: #333300;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #333300;
+	}
+}
+
+@keyframes yellow--animation--line--after {
+	0% {
+		background-color: #333300;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #333300;
+	}
+	10% {
+		background-color: #333300;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #333300;
+	}
+	20% {
+		background-color: #333300;
+		border-left: 15px solid #4c4c00;
+		border-right: 15px solid #333300;
+	}
+	30% {
+		background-color: #4c4c00;
+		border-left: 15px solid #808000;
+		border-right: 15px solid #333300;
+	}
+	40% {
+		background-color: #808000;
+		border-left: 15px solid #cccc00;
+		border-right: 15px solid #4c4c00;
+	}
+	50% {
+		background-color: #cccc00;
+		border-left: 15px solid #ffff00;
+		border-right: 15px solid #808000;
+	}
+	60% {
+		background-color: #ffff00;
+		border-left: 15px solid #cccc00;
+		border-right: 15px solid #cccc00;
+	}
+	70% {
+		background-color: #cccc00;
+		border-left: 15px solid #808000;
+		border-right: 15px solid #ffff00;
+	}
+	80% {
+		background-color: #808000;
+		border-left: 15px solid #4c4c00;
+		border-right: 15px solid #cccc00;
+	}
+	90% {
+		background-color: #4c4c00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #808000;
+	}
+	100% {
+		background-color: #4c4c00;
+		border-left: 15px solid #333300;
+		border-right: 15px solid #808000;
+	}
+}
